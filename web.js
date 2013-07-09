@@ -8,7 +8,7 @@ var index = index_buffer.toString('utf-8');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send("Changing back some things");
+  response.send("Changing back some things"+index);
 });
 
 var port = process.env.PORT || 5000;
